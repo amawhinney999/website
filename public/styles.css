@@ -1,0 +1,195 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ff9933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.5s ease-in-out;
+    z-index: 1000;
+}
+
+#loading-screen.hide {
+    transform: translateX(-100%); /* Slide out transition */
+}
+
+.loading-logo {
+    width: 150px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn { /* Fade-In Animation */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Content Visibility After Loading */
+#content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#content.show {
+    opacity: 1;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section with Background Image */
+#hero {
+    position: relative;
+    height: 60vh;
+    background: url("images/shv-3-edited.jpg") top center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Transparent Overlay */
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Text */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 5px black;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* Button */
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Don Bosco Corner Image */
+.corner-image {
+    width: 200px;
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Rooms */
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    width: 250px;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}

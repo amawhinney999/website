@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Bosco Hotel Sihanoukville</title>
+    <meta name="description" content="Don Bosco Hotel Sihanoukville offers premium services and comfortable accommodations.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loading-screen">
+        <img src="images/loading-logo.png" alt="Loading" class="loading-logo">
+        <div class="loading-text">Welcome to Don Bosco Hotel Sihanoukville</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Don Bosco Hotel Sihanoukville</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Large Background Image -->
+    <section id="hero">
+        <div class="overlay"></div> <!-- Dark transparency effect -->
+        <div class="hero-text">
+            <h2>Welcome to Don Bosco Hotel Sihanoukville</h2>
+            <p>Experience comfort and elegance like never before.</p>
+            <a href="#rooms" class="btn">View Rooms</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Don Bosco Hotel Sihanoukville is a non-profit organisation which offers the finest experience with premium amenities and top-tier service.</p>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <div class="room">
+                <img src="images/room1.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>A comfortable room with a city view.</p>
+            </div>
+            <div class="room">
+                <img src="images/room2.jpg" alt="Suite Room">
+                <h3>Suite Room</h3>
+                <p>Spacious suite with luxury features.</p>
+            </div>
+            <div class="room">
+                <img src="images/room3.jpg" alt="Presidential Suite">
+                <h3>Presidential Suite</h3>
+                <p>Experience the highest level of comfort.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>✔ Free Wi-Fi</li>
+            <li>✔ 24/7 Room Service</li>
+            <li>✔ Swimming Pool</li>
+            <li>✔ Fine Dining Restaurant</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Don Bosco Hotel Sihanoukville | Follow us on  
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("loading-screen").classList.add("hide");
+    }, 3000); // 3 seconds delay
+});
+
+    </script>
+
+</body>
+</html>
