@@ -6,12 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
-
-
 body {
     text-align: center;
     background-color: #f4f4f4;
 }
+
+
 
 /* Loading Screen */
 #loading-screen {
@@ -30,6 +30,7 @@ body {
     z-index: 1000;
 }
 
+
 /* Loading Text */
 
 .loading-text {
@@ -38,10 +39,6 @@ body {
     font-weight: bold; /* Make it bold */
     color: white; /* Ensure it's visible */
 }
-
-
-
-
 
 #loading-screen.hide {
     transform: translateY(-100%); /* Slide out transition */
@@ -69,6 +66,8 @@ body {
     opacity: 1;
 }
 
+
+
 /* Header */
 header {
     background-color: #ff9933; /* Keeps the orange color */
@@ -90,6 +89,17 @@ header {
     padding: 0 50px; /* Purple: Adds spacing on both sides */
 }
 
+.hotel-school-logo { 
+    width: auto;
+    height: 50px; /* Keep this if needed */
+    max-height: 50px;
+    position: absolute; /* Moves it out of the default flow */
+    left: 0; /* Pushes it to the very left */
+    top: 50%; /* Centers it vertically */
+    transform: translateY(-50%); /* Adjusts exact center alignment */
+}
+
+
 /* Year (2007) - Move it Closer to the Logo */
 .year {
     font-size: 16px;
@@ -98,7 +108,7 @@ header {
 }
 
 .hotel-logo {
-    height: 40px;
+    height: 60px;
     margin-left: 10px; /* Adjust the margin if needed */
     display: block;
 }
@@ -111,6 +121,11 @@ header {
     display: flex;
     align-items: center;
 }
+
+
+
+
+
 
 
 /* Second Banner (Navigation Bar) */
@@ -148,6 +163,11 @@ header {
 .nav-banner ul li a:hover {
     background-color: #ff9933; /* Purple: Adds hover effect with orange */
 }
+
+
+
+
+
 
 /* Hero Section with Background Image */
 #hero {
@@ -190,8 +210,6 @@ header {
     margin-bottom: 20px; /* Space between the title and the text below */
 }
 
-
-
 #hero .hero-text p {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     font-size: 18px; /* Same size as the previous text */
@@ -202,10 +220,9 @@ header {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: shadow effect for readability */
 }
 
-
 /* Button */
 .btn {
-    background-color: #ff6600;
+    background-color: #ff9933;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -227,25 +244,91 @@ section {
     border-radius: 10px;
 }
 
-/* Rooms */
-.room-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Rooms Section */
+#rooms {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
-.room {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    width: 250px;
+#rooms h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.room img {
+#rooms p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 10px;
     width: 100%;
-    border-radius: 10px;
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-grid img {
+    width: 100%; /* Makes each image fill its grid column */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay Text */
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact Form */
 form {
@@ -264,7 +347,7 @@ input, textarea {
 }
 
 button {
-    background-color: #ff6600;
+    background-color: #ff9933;
     color: white;
     padding: 10px;
     border: none;
@@ -333,6 +416,12 @@ button:hover {
     background-color: #f4f4f4;
 }
 
+#our-services h2 {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+    font-size: 32px; /* Adjust if needed */
+    font-weight: 700; /* Bold */
+}
+
 
 
 .service-container {
@@ -357,9 +446,9 @@ button:hover {
 }
 
 
-.service-btn {
+.service-btn { /* 4 service buttons */
     padding: 20px 30px; /* Space around text */
-    background-color: #ff6600;
+    background-color: #ff9933;
     color: white;
     border: none;
     cursor: pointer;
@@ -379,6 +468,12 @@ button:hover {
     background-color: #e55a00; /* Darker orange on hover */
 }
 
+.service-icon {
+    width: 30px;  /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it stays above text */
+    margin: 0 auto 5px; /* Centers the icon and adds spacing */
+}
 /* button titles */
 .service-btn .btn-title {
     font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
