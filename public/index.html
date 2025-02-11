@@ -7,6 +7,10 @@
     <meta name="description" content="Don Bosco Hotel Sihanoukville offers premium services and comfortable accommodations.">
 
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -56,18 +60,57 @@
             <img src="images/hotel.jpg" alt="Don Bosco Hotel">
         </div>
         <div class="about-text">
-            <h2>About Don Bosco Hotel Sihanoukville</h2>
-            <p>Don Bosco Hotel Sihanoukville is a non-profit organisation offering the finest experience with premium amenities and top-tier service. Enjoy comfort, luxury, and hospitality like never before in a city that's renowned for its beautiful coastline and vibrant culture.</p>
+            <h2>About Don Bosco Hotel</h2>
+            <p>The Don Bosco Hotel was established in 2007. The purpose for the hotel school is to support the disadvantaged Cambodian youth in providing them a thorough education in the hospitality business. <br><br> It responds to the needs of the poorest of Cambodian youth by offering them a high quality professional education that prepares them for work and for life, with benefit not only to Cambodia but potentially to other societies as well.</p>
+        </div>
+    </div>
+</section>
+
+<section id="our-services">
+    <h2>Our Services</h2>
+    <p>Choose a service to learn more:</p>
+    <div class="service-container">
+        <div class="service-btn-container">
+            <button class="service-btn" onclick="changeImage('amok.jpg')">
+                <span class="btn-title">Restaurant</span>  
+                <span class="btn-subtext">All food ingredients are handpicked daily from the market, we focus on fresh and healthy food for our guests.</span>
+            </button>
+            <button class="service-btn" onclick="changeImage('work.jpg')">
+                <span class="btn-title">Technical Production</span> 
+                <span class="btn-subtext">Offering services related to Electricity, Mechanical, Welding, and Automotive.</span>
+            </button>
+            <button class="service-btn" onclick="changeImage('conference-room.png')">
+                <span class="btn-title">Conference Room</span> 
+                <span class="btn-subtext">The meeting room is fully equipped with up-to-date communication technology such as fast internet access and an audio-visual system.</span>
+            </button>
+            <button class="service-btn" onclick="changeImage('swimmingPool.jpg')">
+                <span class="btn-title">Swimming Pool</span> 
+                <span class="btn-subtext">Don Bosco Hotel has 1 swimming pool (1.40 meters to 1.60 meters depth).</span>
+            </button>
+        </div>
+        <div class="service-content">
+            <div id="service-image">
+                <!-- Default image when page loads -->
+                <img src="images/amok.jpg" alt="Service 1" id="service-img">
+            </div>
         </div>
     </div>
 </section>
 
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Don Bosco Hotel Sihanoukville is a non-profit organisation which offers the finest experience with premium amenities and top-tier service.</p>
-    </section>
+
+
+<!-- JavaScript placed here -->
+<script>
+    function changeImage(imageName) {
+        document.getElementById('service-img').src = 'images/' + imageName;
+    }
+</script>
+
+  
+  
+  
+    
 
     <!-- Rooms Section -->
     <section id="rooms">

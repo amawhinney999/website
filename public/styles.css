@@ -26,23 +26,26 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     z-index: 1000;
 }
 
 /* Loading Text */
+
 .loading-text {
-    font-family: 'Brush Script MT', cursive; /* Apply Brush Script MT font */
-    font-size: 24px; /* Adjust the text size */
-    color: white; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
+    font-size: 24px; /* Keep the text size */
+    font-weight: bold; /* Make it bold */
+    color: white; /* Ensure it's visible */
 }
+
 
 
 
 
 #loading-screen.hide {
     transform: translateY(-100%); /* Slide out transition */
-    transition: transform 1.s ease-in-out;
+    transition: transform 0.5.s ease-in-out;
 }
 
 .loading-logo {
@@ -70,7 +73,7 @@ body {
 header {
     background-color: #ff9933; /* Keeps the orange color */
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center; /* Centering content */
     align-items: center;
@@ -89,13 +92,13 @@ header {
 
 /* Year (2007) - Move it Closer to the Logo */
 .year {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 15px; /* Purple: Moves "2007" closer to the logo */
 }
 
 .hotel-logo {
-    height: 60px;
+    height: 40px;
     margin-left: 10px; /* Adjust the margin if needed */
     display: block;
 }
@@ -103,7 +106,7 @@ header {
 
 /* Stars on the Right */
 .stars {
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 10px;
     display: flex;
     align-items: center;
@@ -132,6 +135,7 @@ header {
 }
 
 .nav-banner ul li a {
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -149,7 +153,7 @@ header {
 #hero {
     position: relative;
     height: 60vh;
-    background: url("images/shv-3-edited.jpg") top center/cover no-repeat;
+    background: url("images/swimmingPool.jpg") center -150px/cover no-repeat; /* Move the image down by 50px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,14 +179,29 @@ header {
     padding: 20px;
 }
 
-.hero-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+#hero .hero-text h2 {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-size: 48px; /* Large font size */
+    font-weight: 700; /* Bold weight for emphasis */
+    color: white; /* Set the text color to white */
+    text-transform: uppercase; /* Make it uppercase (similar to the Ekal website) */
+    letter-spacing: 3px; /* Add some letter spacing for a more modern look */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add a subtle text shadow for readability */
+    margin-bottom: 20px; /* Space between the title and the text below */
 }
 
-.hero-text p {
-    font-size: 18px;
+
+
+#hero .hero-text p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-size: 18px; /* Same size as the previous text */
+    font-weight: 700; /* Bold weight for emphasis */
+    color: white; /* Text color */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Slight letter spacing */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: shadow effect for readability */
 }
+
 
 /* Button */
 .btn {
@@ -259,8 +278,19 @@ button:hover {
 /* About Section: Image on Left, Text on Right */
 #about-hotel {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #ff9933;;
 }
+
+/* Apply Merriweather font only to the title in the About section */
+#about-hotel .about-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px; /* Font size similar to the example */
+    font-weight: 700; /* Bold weight for the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px;
+    /*margin-left: -50px; */
+}
+
 
 .about-container {
     display: flex;
@@ -271,10 +301,10 @@ button:hover {
 }
 
 .about-image img {
-    width: 100%;
-    max-width: 500px; /* Adjusts the image size */
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* NEW: Increase the width of the image */
+    height: auto; /* NEW: Maintain aspect ratio */
+    border-radius: 10px; /* NEW: Optional: add border radius */
+    transition: width 0.3s ease; /* NEW: Smooth transition for resizing */
 }
 
 .about-text {
@@ -285,16 +315,114 @@ button:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-text h2 {
+.about-text h2 { /* header text of About section */
     font-size: 28px;
     margin-bottom: 20px;
     color: #333;
+    font-family: 'Montserrat', sans-serif; 
+    
 }
 
-.about-text p {
+.about-text p { /*  subtext of About section */
     font-size: 18px;
     color: #555;
 }
+
+#our-services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Space between buttons and image */
+}
+
+.service-btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 40px; /* Move buttons down a bit */
+    padding: 20px; /* Add space inside the box */
+    background-color: white; /* White background for the box */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a floating effect */
+}
+
+
+.service-btn {
+    padding: 20px 30px; /* Space around text */
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between title and subtext */
+    transition: background-color 0.3s;
+    width: 300px; /* Adjust width for larger buttons */
+    
+}
+
+.service-btn:hover {
+    background-color: #e55a00; /* Darker orange on hover */
+}
+
+/* button titles */
+.service-btn .btn-title {
+    font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
+    font-size: 20px; /* Adjust title font size */
+    font-weight: 700; /* Bold weight for emphasis */
+    font-weight: bold; /* Make title bold */
+    text-transform: uppercase;
+    color: black; /* NEW: Ensures the text is white */
+    white-space: nowrap;
+}
+
+/* button subtext  */
+.service-btn .btn-subtext {
+    font-size: 14px; /* Adjust subtext font size */
+    font-weight: normal;
+    color: black; /* NEW: Ensures the text is white */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-content {
+    flex: 1;
+    padding-left: 100px; /* NEW: Move the image further to the right */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center the image vertically */
+}
+
+#service-image {
+    margin-top: 60px; /* Adjust this value to move the image down */
+    margin-bottom: 20px; /* Optionally, add bottom margin for balance */
+    width: 100%; /* Ensure the image takes up the full container width */
+    max-width: 500px; /* Adjust as needed */
+}
+
+#service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 
 
 
