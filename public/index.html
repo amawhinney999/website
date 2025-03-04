@@ -52,7 +52,14 @@
             <p>Experience comfort and elegance like never before.</p>
             <a href="#rooms" class="btn">View Rooms</a>
         </div>
+
+            <button class="scroll-btn" onclick="scrollToSection()">↓</button> <!-- Scroll button with arrow -->
+        
     </section>
+
+  
+
+    
 
     <!-- New Section: About Don Bosco Hotel (Image on Left, Text on Right) -->
 <section id="about-hotel">
@@ -112,7 +119,8 @@
     }
 </script>
 
-  
+
+
   
   
     
@@ -190,10 +198,17 @@
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 document.getElementById("loading-screen").classList.add("hide");
-    }, 3000); // 3 seconds delay
+    }, 1500); // 1.5 sec delay
 });
-
     </script>
+
+
+
+    <script 
+        src="scripts.js">
+    </script> <!-- Make sure this points to your JS file -->
+        
+
 
 </body>
 </html>

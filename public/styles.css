@@ -4,12 +4,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    html {
+        scroll-behavior: smooth;  /* This will apply smooth scrolling for all anchor links and page navigation */
+    }
+    
+    
+
 }
 
 body {
     text-align: center;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+
+
 
 
 
@@ -20,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #ff6600;
+    background: #9B2915;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -37,7 +47,7 @@ body {
     font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
     font-size: 24px; /* Keep the text size */
     font-weight: bold; /* Make it bold */
-    color: white; /* Ensure it's visible */
+    color: #E9B44C; /* Ensure it's visible */
 }
 
 #loading-screen.hide {
@@ -68,25 +78,18 @@ body {
 
 
 
-/* Header */
-header {
-    background-color: #ff9933; /* Keeps the orange color */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center; /* Centering content */
-    align-items: center;
-    position: relative; /* Allows absolute positioning for fine adjustments */
-}
+
+
 
 /* Header Content (Keeps 2007, Logo, and Stars in One Row) */
 .header-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px; /* Adjust width to prevent shifting */
-    justify-content: center; /* Purple: Center the entire content */
-    padding: 0 50px; /* Purple: Adds spacing on both sides */
+    position: absolute;  
+    top: 0; /* Stick it to the very top */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Keeps it properly centered */
+    z-index: 10; /* Ensures it stays above the hero */
+    width: 100%; /* Make sure it stretches across */
+    
 }
 
 .hotel-school-logo { 
@@ -95,7 +98,7 @@ header {
     max-height: 50px;
     position: absolute; /* Moves it out of the default flow */
     left: 0; /* Pushes it to the very left */
-    top: 50%; /* Centers it vertically */
+    top: 15px; /* Centers it vertically */
     transform: translateY(-50%); /* Adjusts exact center alignment */
 }
 
@@ -104,43 +107,69 @@ header {
 .year {
     font-size: 16px;
     font-weight: bold;
-    margin-right: 15px; /* Purple: Moves "2007" closer to the logo */
+    
+
+    position: absolute;
+    top: 35px;
+    right: 55%;
+    
+    
 }
 
 .hotel-logo {
     height: 60px;
-    margin-left: 10px; /* Adjust the margin if needed */
-    display: block;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 
 /* Stars on the Right */
 .stars {
     font-size: 18px;
+    /*
     margin-left: 10px;
     display: flex;
     align-items: center;
+   */
+    position: absolute;
+    top: 30px;
+     left: 55%;
+     width: 100px;
+    
 }
 
 
-
-
-
-
-
-/* Second Banner (Navigation Bar) */
 .nav-banner {
-    background-color: #333; /* Dark background for the second banner */
-    padding: 15px 0; /*  Adds space for a balanced look */
-    text-align: center;
+    
+    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    
+    width: 100%;
+    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Purple: Adds a thin white line above the navbar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Purple: Adds a thin white line below the navbar */
+    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
+    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+
+    display: flex;
+    justify-content: center; /* Ensures the nav items are centered horizontally */
+    align-items: center; /* Centers nav items vertically */
+    text-align: center; /* Centers text in navbar */
+    margin: 0 auto; /* Ensures the navbar stays centered */
+    left: 50%; /* Move the container to the center */
+    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
+    position: absolute; /* Change to absolute positioning */
+    margin-top: -30px; /* Moves text up */
 }
 
 
 .nav-banner ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
+    margin: 0 auto;
+    display: flex; /* Aligns list items horizontally */
     justify-content: center; /* Purple: Center-aligns navigation buttons */
     gap: 30px; /* Purple: Adds spacing between buttons */
 }
@@ -151,13 +180,15 @@ header {
 
 .nav-banner ul li a {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #E9B44C;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .nav-banner ul li a:hover {
@@ -172,13 +203,25 @@ header {
 /* Hero Section with Background Image */
 #hero {
     position: relative;
-    height: 60vh;
-    background: url("images/swimmingPool.jpg") center -150px/cover no-repeat; /* Move the image down by 50px */
+    /* height: 110vh; */
+   /* height: 720px;  Fixed pixel height */
+   /* width: auto;    Keeps aspect ratio */
+
+    width: 100vw;  /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling issues */
+    
+
+
+    background: url("images/1920x1080SwimmingPool.png") center 30px/cover no-repeat; /* Move the image down by 50px */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #E9B44C;
+    transform: translateY(-80px); /* Moves it up */
 }
 
 /* Dark Transparent Overlay */
@@ -197,13 +240,14 @@ header {
     z-index: 2;
     text-shadow: 2px 2px 5px black;
     padding: 20px;
+    padding-top: 80px; /* Adjust the value to move the text down */
 }
 
 #hero .hero-text h2 {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     font-size: 48px; /* Large font size */
     font-weight: 700; /* Bold weight for emphasis */
-    color: white; /* Set the text color to white */
+    color:#E9B44C; /* Set the text color to white */
     text-transform: uppercase; /* Make it uppercase (similar to the Ekal website) */
     letter-spacing: 3px; /* Add some letter spacing for a more modern look */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add a subtle text shadow for readability */
@@ -214,7 +258,7 @@ header {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     font-size: 18px; /* Same size as the previous text */
     font-weight: 700; /* Bold weight for emphasis */
-    color: white; /* Text color */
+    color: #E9B44C; /* Text color */
     text-transform: uppercase; /* Uppercase letters */
     letter-spacing: 2px; /* Slight letter spacing */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: shadow effect for readability */
@@ -222,7 +266,7 @@ header {
 
 /* Button */
 .btn {
-    background-color: #ff9933;
+    background-color: #9B2915;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -230,6 +274,85 @@ header {
     margin-top: 10px;
     border-radius: 5px;
 }
+
+/* Hero Section Styling */
+#hero {
+    position: relative;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+/* Style for the scroll button */
+.scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%; /* Position it towards the bottom of the hero section */
+    background-color: maroon; /* Your color scheme */
+    color: white;
+    border: none;
+    width: 50px; 
+    height: 50px; 
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover {
+    background-color: darkred;
+    transform: scale(1.1); /* Slight hover effect */
+}
+
+
+.scroll-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent white when hovered */
+    transform: scale(1.1); /* Slight grow effect when hovering */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,7 +371,7 @@ section {
 #rooms {
     padding: 50px 20px;
     text-align: center;
-    background-color: #ff9933; /* Orange background */
+    background-color: #64625c; /* Orange background */
     border-radius: 10px; /* Optional: for rounded corners */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
 }
@@ -258,7 +381,7 @@ section {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: white; /* White text color for better contrast */
+    color: black; /* White text color for better contrast */
 }
 
 #rooms p {
@@ -365,7 +488,8 @@ button:hover {
 /* About Section: Image on Left, Text on Right */
 #about-hotel {
     padding: 50px 20px;
-    background-color: #ff9933;;
+    background-color: #9B2915;
+    margin-top: -40px; /* Negative margin to pull the section closer */
 }
 
 /* Apply Merriweather font only to the title in the About section */
@@ -373,7 +497,7 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px; /* Font size similar to the example */
     font-weight: 700; /* Bold weight for the title */
-    color: #333; /* Dark color for the title */
+    color: black; /* Dark color for the title */
     margin-bottom: 20px;
     /*margin-left: -50px; */
 }
@@ -405,19 +529,19 @@ button:hover {
 .about-text h2 { /* header text of About section */
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: #E9B44C;
     font-family: 'Montserrat', sans-serif; 
     
 }
 
 .about-text p { /*  subtext of About section */
     font-size: 18px;
-    color: #555;
+    color: black;
 }
 
 #our-services {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #E9B44C;
 }
 
 #our-services h2 {
@@ -452,7 +576,7 @@ button:hover {
 
 .service-btn { /* 4 service buttons */
     padding: 20px 30px; /* Space around text */
-    background-color: #ff9933;
+    background-color: #9B2915;
     color: white;
     border: none;
     cursor: pointer;
@@ -478,6 +602,7 @@ button:hover {
     display: block; /* Ensures it stays above text */
     margin: 0 auto 5px; /* Centers the icon and adds spacing */
 }
+
 /* button titles */
 .service-btn .btn-title {
     font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
@@ -485,7 +610,7 @@ button:hover {
     font-weight: 700; /* Bold weight for emphasis */
     font-weight: bold; /* Make title bold */
     text-transform: uppercase;
-    color: black; /* NEW: Ensures the text is white */
+    color: #E9B44C; /* NEW: Ensures the text is white */
     white-space: nowrap;
 }
 
@@ -493,7 +618,7 @@ button:hover {
 .service-btn .btn-subtext {
     font-size: 14px; /* Adjust subtext font size */
     font-weight: normal;
-    color: black; /* NEW: Ensures the text is white */
+    color: #E9B44C; /* NEW: Ensures the text is white */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -541,4 +666,5 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Add a hover effect for links */
 }
+
 
