@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Room | Don Bosco Hotel Sihanoukville</title>
+    <meta name="description" content="Relax in our Pool-View Cottage Room, offering comfort and luxury with stunning views of the hotel’s pool.">
+    <link rel="stylesheet" href="room-styles.css"> <!-- Link to the reusable CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header (First Banner with Logo, 2007, and Stars) -->
+  <header>
+    <div class="header-content">
+        <a href="index.html">
+        <img src="images/LOGO-WEBSITE.png" alt="Hotel School SHV Logo" class="hotel-school-logo">
+        </a>
+        <span class="year">est. 2007</span>
+        <img src="images/technicalSchool.png" alt="Don Bosco Hotel Logo" class="hotel-logo">
+        <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+</header>
+
+
+ <!-- Navigation Bar (Second Banner) -->
+ <nav class="nav-banner">
+    <ul>
+       <li><a href="about.html">About</a></li>
+       <li><a href="rooms.html">Rooms</a></li>
+       <li><a href="services.html">Services</a></li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Room Page Content -->
+    <section class="room-page">
+        <h2>Pool-View Cottage Room</h2>
+        <div class="room-details">
+            <div class="room-image">
+                <img src="images/room-Pool-view-cottage-1.jpeg" alt="Pool-View Cottage Room">   
+            </div>
+            <!-- Gallery Thumbnails -->
+        <div class="gallery">
+            <img src="images/amok.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('room-Pool-view-cottage-1.jpeg')">
+            <img src="images/spa.png" alt="Image 2" class="thumbnail" onclick="changeMainImage('room-Standard-king-room-2.jpeg')">
+            <img src="images/cooks.jpeg" alt="Image 3" class="thumbnail" onclick="changeMainImage('room-Family-room-4.jpeg')">
+
+            <script>
+                // Function to change the main image
+                function changeMainImage(imageSrc) {
+                    // Find the main image container
+                    const mainImage = document.querySelector('.room-image img');
+                    // Change the source of the main image to the clicked thumbnail's image
+                    mainImage.src = 'images/' + imageSrc; // Assuming the images are in the "images" folder
+                }
+            </script>
+            
+        <div class="room-info">
+                <h3>Room Description</h3>
+                <p>Relax in our beautifully designed Pool-View Cottage Room, offering stunning views of the hotel's pool. This room is perfect for those who want a peaceful, private retreat with all the modern amenities you need for a comfortable stay.</p>
+                
+                <h3>Room Features</h3>
+                <ul>
+                    <li><input type="checkbox" class="feature-checkbox" checked> King-size bed</li>
+                    <li><input type="checkbox" class="feature-checkbox" checked> Private bathroom with shower</li>
+                    <li><input type="checkbox" class="feature-checkbox" checked> Air conditioning</li>
+                    <li><input type="checkbox" class="feature-checkbox" checked> Flat-screen TV</li>
+                    <li><input type="checkbox" class="feature-checkbox" checked> Complimentary Wi-Fi</li>
+                    <li><input type="checkbox" class="feature-checkbox" checked> Pool view</li>
+                </ul>
+
+                <h3>Booking & Availability</h3>
+                <p>Contact us to check availability and book your stay. We look forward to welcoming you to our beautiful Pool-View Cottage Room!</p>
+                <button class="btn-book">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Don Bosco Hotel Sihanoukville | Follow us on  
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>

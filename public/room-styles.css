@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Header Content (Keeps 2007, Logo, and Stars in One Row) */
+.header-content {
+    position: absolute;  
+    top: 0; /* Stick it to the very top */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Keeps it properly centered */
+    z-index: 10; /* Ensures it stays above the hero */
+    width: 100%; /* Make sure it stretches across */
+    
+}
+
+.hotel-school-logo { 
+    width: auto;
+    height: 50px; /* Keep this if needed */
+    max-height: 50px;
+    position: absolute; /* Moves it out of the default flow */
+    left: 0; /* Pushes it to the very left */
+    top: 15px; /* Centers it vertically */
+    transform: translateY(-50%); /* Adjusts exact center alignment */
+}
+
+
+/* Year (2007) - Move it Closer to the Logo */
+.year {
+    font-size: 16px;
+    font-weight: bold;
+    
+
+    position: absolute;
+    top: 35px;
+    right: 55%;
+    
+    
+}
+
+.hotel-logo {
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+/* Stars on the Right */
+.stars {
+    font-size: 18px;
+    /*
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+   */
+    position: absolute;
+    top: 30px;
+     left: 55%;
+     width: 100px;
+    
+}
+
+
+.nav-banner {
+    
+    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    
+    width: 100%;
+    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
+    border-top: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line above the navbar */
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line below the navbar */
+    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
+    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+
+    display: flex;
+    justify-content: center; /* Ensures the nav items are centered horizontally */
+    align-items: center; /* Centers nav items vertically */
+    text-align: center; /* Centers text in navbar */
+    margin: 0 auto; /* Ensures the navbar stays centered */
+    left: 50%; /* Move the container to the center */
+    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
+    position: absolute; /* Change to absolute positioning */
+    margin-top: -30px; /* Moves text up */
+}
+
+
+.nav-banner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex; /* Aligns list items horizontally */
+    justify-content: center; /* Purple: Center-aligns navigation buttons */
+    gap: 30px; /* Purple: Adds spacing between buttons */
+}
+
+.nav-banner ul li {
+    display: inline;
+}
+
+.nav-banner ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #E9B44C;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-banner ul li a:hover {
+    background-color: #ff9933; /* Purple: Adds hover effect with orange */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Room Page Content */
+.room-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    margin-top: 175px; /* moving the header down */
+}
+
+.room-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#E9B44C;
+    text-transform: uppercase;
+    font-weight: 700; /* Bold weight for emphasis */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.room-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.room-image img {
+    width: 100%; /* Ensure the main image takes up full width of its container */
+    max-width: 800px; /* Limit the size to avoid it being too large */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Centering the image */
+}
+
+.room-info {
+    max-width: 600px;
+}
+
+.room-info h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+.room-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.room-info ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.room-info ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Style for the checkboxes */
+.feature-checkbox {
+    margin-right: 10px; /* Space between checkbox and text */
+    accent-color: green; /* Set checkbox color to green */
+  }
+  
+  /* Optional: Style for the list to make it more appealing */
+  .room-features {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .room-features li {
+    font-size: 1.2em; /* Customize the text size if necessary */
+    margin: 5px 0; /* Add space between list items */
+  }
+
+  /* Gallery container styling (Below the main image) */
+.gallery {
+    display: flex;
+    justify-content: center; /* Centers thumbnails horizontally */
+    gap: 10px; /* Adds spacing between thumbnails */
+    margin-top: 15px; /* Space above the gallery */
+    flex-wrap: wrap; /* Allows the thumbnails to wrap if needed */
+  }
+  
+  /* Thumbnail image styling */
+  .gallery img {
+    width: 80px; /* Small size for thumbnails */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: 2px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+  }
+  
+  /* Hover effect on thumbnails */
+  .gallery img:hover {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+
+.btn-book {
+    background-color: #f1c40f;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

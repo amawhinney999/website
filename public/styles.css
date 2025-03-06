@@ -398,6 +398,13 @@ section {
     gap: 10px;
     width: 100%;
 }
+.image-grid a img {  /* NEW UPDATE */
+    transition: transform 0.3s ease-in-out; /* NEW UPDATE */
+} 
+
+.image-grid a:hover img {  /* NEW UPDATE */
+    transform: scale(1.1); /* Enlarge the image on hover */ /* NEW UPDATE */
+}
 
 .image-container {
     position: relative;
@@ -410,6 +417,7 @@ section {
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Overlay Text */
 .overlay-text {
