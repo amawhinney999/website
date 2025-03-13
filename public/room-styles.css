@@ -230,6 +230,15 @@ body {
     font-size: 1.2em; /* Customize the text size if necessary */
     margin: 5px 0; /* Add space between list items */
   }
+  
+  .gallery-subtext {
+    text-align: center; /* Center the text */
+    font-size: 1.2rem; /* Adjust text size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between text and images */
+    color: #333; /* Match website theme */
+}
+
 
   /* Gallery container styling (Below the main image) */
 .gallery {

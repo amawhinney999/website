@@ -196,7 +196,28 @@ body {
 }
 
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
 
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: maroon;
+        width: 100%;
+    }
+    .hamburger {
+        display: block;
+    }
+}
 
 
 
@@ -371,7 +392,7 @@ section {
 #rooms {
     padding: 50px 20px;
     text-align: center;
-    background-color: #64625c; /* Orange background */
+    background-color: #9B2915; /* Orange background */
     border-radius: 10px; /* Optional: for rounded corners */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
 }
