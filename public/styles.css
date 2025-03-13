@@ -469,6 +469,17 @@ section {
 
 
 
+.watermark-cover {
+    position: absolute;
+    left: 88%; /* Adjust the position of the watermark TO HIDE WATERMARK */
+    transform: translateX(-50%);
+    bottom: -2475PX;  /* Adjust the position of the watermark TO hide watermark */
+    width: 240px;
+    height: 40px;
+    background-color: white;
+    z-index: 999999;
+}
+
 
 
 
