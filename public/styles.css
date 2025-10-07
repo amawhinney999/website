@@ -172,6 +172,7 @@ body {
     display: flex; /* Aligns list items horizontally */
     justify-content: center; /* Purple: Center-aligns navigation buttons */
     gap: 30px; /* Purple: Adds spacing between buttons */
+    padding-left: 80px;
 }
 
 .nav-banner ul li {
@@ -487,8 +488,18 @@ section {
 
 
 
+#google-reviews { /*THIS IS THE SECTION ONLY FOR 'OUR LOCATION' (WHICH IS IS SMALL SECTION WITHIN THE #CONTACT SECTION). THIS IS BECAUSE I HAVE A SECTION WITHIN A SECTION. IN THE #CONTACT CODE BELOW THIS, I WILL CHANGE THE BG COLOR OF THE CONTACT US SECTION */
+    background-color: #E9B44C; /* same yellow as Our Services */
+    padding: 80px 0; /* spacing top and bottom */
+    text-align: center; /* centers the heading and iframe */
+}
 
-
+/* Contact Section Background */
+#contact {
+    background-color: #E9B44C; /* same yellow as Our Services */
+    padding: 80px 0; /* spacing around content */
+    text-align: center; /* keeps headings/forms centered */
+}
 
 
 
@@ -664,9 +675,9 @@ button:hover {
 
 .service-content {
     flex: 1;
-    padding-left: 100px; /* NEW: Move the image further to the right */
+    padding-left: 20px; /* NEW: Move the image further to the right */
     display: flex;
-    justify-content: flex-end; /* Align image to the right */
+    justify-content: center; /* Align image to the right */ 
     align-items: center; /* Center the image vertically */
 }
 
@@ -675,6 +686,7 @@ button:hover {
     margin-bottom: 20px; /* Optionally, add bottom margin for balance */
     width: 100%; /* Ensure the image takes up the full container width */
     max-width: 500px; /* Adjust as needed */
+    margin-left: 0; /* moves image 50px to the left */
 }
 
 #service-img {

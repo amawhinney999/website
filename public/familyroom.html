@@ -59,17 +59,20 @@
 
             <!-- Gallery Thumbnails -->
         <div class="gallery">
-            <img src="images/amok.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('room-Pool-view-cottage-1.jpeg')">
-            <img src="images/spa.png" alt="Image 2" class="thumbnail" onclick="changeMainImage('room-Standard-king-room-2.jpeg')">
-            <img src="images/cooks.jpeg" alt="Image 3" class="thumbnail" onclick="changeMainImage('room-Family-room-4.jpeg')">
+            <img src="images/amok.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('room-Pool-view-cottage-1.jpeg', 1)">
+            <img src="images/spa.png" alt="Image 2" class="thumbnail" onclick="changeMainImage('room-Standard-king-room-2.jpeg', 2)">
+            <img src="images/cooks.jpeg" alt="Image 3" class="thumbnail" onclick="changeMainImage('room-Family-room-4.jpeg', 3)">
 
             <script>
                 // Function to change the main image
-                function changeMainImage(imageSrc) {
+                function changeMainImage(imageSrc,index) {
                     // Find the main image container
                     const mainImage = document.querySelector('.room-image img');
                     // Change the source of the main image to the clicked thumbnail's image
                     mainImage.src = 'images/' + imageSrc; // Assuming the images are in the "images" folder
+                     // Update the counter
+                    const counter = document.querySelector('.gallery-subtext');
+                    counter.textContent = index + ' of 3';
                 }
             </script>
             
