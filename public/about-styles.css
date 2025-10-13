@@ -155,135 +155,117 @@ body {
 
 
 
-/* Room Page Content */
+/* === .room-page (Expanded + Improved Image Sizing) === */
 .room-page {
     max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
-    margin-top: 175px; /* moving the header down */
-    background-color: #9B2915;
-    
+    padding: 40px;
+    margin-top: 175px;
+    background-color: #9B2915; /* Keep maroon background */
     box-shadow: 0 4px 20px rgba(155, 41, 21, 0.25);
     border-radius: 10px;
 }
 
 .room-page h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
-    color:#E9B44C;
-    text-transform: uppercase;
-    font-weight: 700; /* Bold weight for emphasis */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-}
-
-.room-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.room-image img {
-    width: 100%; /* Ensure the main image takes up full width of its container */
-    max-width: 800px; /* Limit the size to avoid it being too large */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image */
-    margin: 0 auto; /* Centering the image */
-}
-
-.room-info {
-    max-width: 600px;
-}
-
-.room-info h3 {
-    font-size: 1.8rem;
     color: #E9B44C;
-    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.room-info p {
-    font-size: 1.1rem;
+/* Layout container */
+.room-details.about-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px; /* More breathing room between columns */
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .room-details.about-layout {
+        grid-template-columns: 1fr 420px;
+        gap: 60px;
+    }
+}
+
+/* Left & right columns */
+.about-left,
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 45px; /* more spacing between sections */
+}
+
+/* Cards */
+.about-card {
+    background-color: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.about-card h3 {
+    color: #E9B44C; /* match main heading color */
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.about-card p {
     color: #FFFFFF;
-    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
-.room-info ul {
+/* === Image placeholders (updated sizing) === */
+.about-image-placeholder {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.about-image-placeholder img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 380px; /* all images same width */
+    height: 250px; /* fixed uniform height */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.img-caption {
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Quick facts box */
+.about-card.small {
+    padding: 18px;
+}
+
+.facts-list {
     list-style: none;
-    padding-left: 20px;
-}
-
-.room-info ul li {
-    font-size: 1.1rem;
-    margin: 5px 0;
-}
-
-/* Style for the checkboxes */
-.feature-checkbox {
-    margin-right: 10px; /* Space between checkbox and text */
-    accent-color: green; /* Set checkbox color to green */
-  }
-  
-  /* Optional: Style for the list to make it more appealing */
-  .room-features {
-    list-style-type: none; /* Remove default bullet points */
     padding: 0;
     margin: 0;
-  }
-  
-  .room-features li {
-    font-size: 1.2em; /* Customize the text size if necessary */
-    margin: 5px 0; /* Add space between list items */
-  }
-  
-  .gallery-subtext {
-    text-align: center; /* Center the text */
-    font-size: 1.2rem; /* Adjust text size */
-    font-weight: bold;
-    margin-bottom: 10px; /* Space between text and images */
-    color: #FFFFFF; /* Match website theme */
+    color: #FFFFFF;
+    font-size: 1rem;
 }
 
-
-  /* Gallery container styling (Below the main image) */
-.gallery {
-    display: flex;
-    justify-content: center; /* Centers thumbnails horizontally */
-    gap: 10px; /* Adds spacing between thumbnails */
-    margin-top: 15px; /* Space above the gallery */
-    flex-wrap: wrap; /* Allows the thumbnails to wrap if needed */
-  }
-  
-  /* Thumbnail image styling */
-  .gallery img {
-    width: 80px; /* Small size for thumbnails */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Pointer cursor on hover */
-    border: 2px solid #ccc; /* Optional border */
-    border-radius: 5px; /* Optional rounded corners */
-    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
-  }
-  
-  /* Hover effect on thumbnails */
-  .gallery img:hover {
-    transform: scale(1.1); /* Zoom effect */
-  }
-  
-
-.btn-book {
-    background-color: #f1c40f;
-    color: #fff;
-    font-size: 1.1rem;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.facts-list li {
+    margin: 6px 0;
 }
 
-.btn-book:hover {
-    background-color: #e67e22;
-}
 
 /* Footer Styles */
 footer {
