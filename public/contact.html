@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Don Bosco Hotel Sihanoukville</title>
     <meta name="description" content="Learn more about Don Bosco Hotel Sihanoukville.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
     <style>
         .header-graphics {
@@ -18,80 +19,37 @@
             margin: 10px 12px;
             vertical-align: middle;
         }
-        .contact-container {
-            max-width: 600px;
-            margin: 100px auto 0 auto; /* Increased top margin */
-            padding: 30px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(155, 41, 21, 0.15);
-            font-family: 'Montserrat', sans-serif;
-        }
-        .contact-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .contact-info {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 6px 0;
-            color: #333;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #9B2915;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 18px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-        }
-        .contact-form button {
-            background: #9B2915;
-            color: #fff;
-            border: none;
-            padding: 12px 28px;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            font-weight: 700;
-            transition: background 0.2s;
-        }
-        .contact-form button:hover {
-            background: #7a1f10;
-        }
+      
+       
+      
     </style>
 </head>
 <body>
 
     <!-- Header (First Banner with Logo, 2007, and Stars) -->
-    <header>
-        <div class="header-content">
-            <span class="year">2007</span>
-            <img src="images/technicalSchool.png" alt="Don Bosco Hotel Logo" class="hotel-logo">
-            <div class="stars">⭐⭐⭐⭐</div>
-        </div>
-    </header>
+  <header>
+    <div class="header-content">
+        <a href="index.html">
+        <img src="images/LOGO-WEBSITE.png" alt="Hotel School SHV Logo" class="hotel-school-logo">
+        </a>
+        <span class="year">est. 2007</span>
+        <img src="images/technicalSchool.png" alt="Don Bosco Hotel Logo" class="hotel-logo">
+        <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+</header>
 
-    <!-- Navigation Bar (Second Banner) -->
-    <nav class="nav-banner">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <br>
-    <br>
+
+ <!-- Navigation Bar (Second Banner) -->
+ <nav class="nav-banner">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="rooms.html">Rooms</a></li>
+       <li><a href="services.html">Services</a></li>
+       <li><a href="contact.html">Contact</a></li>
+   </ul>
+</nav>
+
 
         <div class="contact-container">
         <div class="contact-header">
@@ -102,18 +60,27 @@
             <p><strong>Email:</strong> alex.mawhinney@example.com</p>
             <p><strong>Phone:</strong> (555) 123-4567</p>
         </div>
-        <form class="contact-form" action="#" method="post">
-            <label for="name">Your Name</label>
+
+        <div id="confirmation" class="confirmation-message"></div>
+
+
+        <form class="contact-form" id="contactForm" action="#" method="post">
+
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email</label>
+            <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea id="message" name="message" rows="6" required></textarea>
 
             <button type="submit">Send Message</button>
         </form>
+
+
+        
+
     </div>
     
 
@@ -123,6 +90,31 @@
             <a href="#">Facebook</a> | <a href="#">Instagram</a>
         </p>
     </footer>
+
+
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page refresh
+
+    const confirmation = document.getElementById('confirmation');
+    confirmation.textContent = "Your message has been sent! Thank you.";
+    confirmation.classList.add('show'); // show message (slide + fade in)
+
+    // Fade out after 5 seconds
+    setTimeout(() => {
+        confirmation.classList.remove('show'); // triggers slide up & fade out
+        confirmation.textContent = "";
+    }, 5000);
+
+    // Clear the form fields
+    this.reset();
+});
+</script>
+
+
+
+
 
 </body>
 </html>

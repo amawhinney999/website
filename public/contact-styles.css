@@ -1,63 +1,166 @@
-/* General Page Styles */
-body {
-    background: #FDF6E3;
-    font-family: 'Montserrat', sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-}
-
-/* Navigation Banner */
-.nav-banner {
-    width: 100%;
-    background: #9B2915;
-    color: #fff;
-    padding: 24px 0 18px 0;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    box-shadow: 0 2px 8px rgba(155, 41, 21, 0.12);
 }
 
-/* Header Graphics (Logo, Stars, Banner) */
-.header-graphics {
-    text-align: center;
-    margin: 40px 0 30px 0;
+body {
+    background: linear-gradient(to bottom, #FF9933, #FFF8E7);
+    color: #FFFFFF;
+    line-height: 1.6;
+    padding-top:0px;
+    
 }
-.header-graphics img {
-    max-width: 220px;
-    margin: 10px 12px;
-    vertical-align: middle;
+
+
+
+/* Header Content (Keeps 2007, Logo, and Stars in One Row) */
+.header-content {
+    position: absolute;  
+    top: 0; /* Stick it to the very top */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Keeps it properly centered */
+    z-index: 10; /* Ensures it stays above the hero */
+    width: 100%; /* Make sure it stretches across */
+    
 }
+
+.hotel-school-logo { 
+    width: auto;
+    height: 50px; /* Keep this if needed */
+    max-height: 50px;
+    position: absolute; /* Moves it out of the default flow */
+    left: 0; /* Pushes it to the very left */
+    top: 15px; /* Centers it vertically */
+    transform: translateY(-50%); /* Adjusts exact center alignment */
+}
+
+
+/* Year (2007) - Move it Closer to the Logo */
+.year {
+    font-size: 16px;
+    font-weight: bold;
+    
+
+    position: absolute;
+    top: 35px;
+    right: 55%;
+    
+    
+}
+
+.hotel-logo {
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+/* Stars on the Right */
+.stars {
+    font-size: 18px;
+    /*
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+   */
+    position: absolute;
+    top: 30px;
+     left: 55%;
+     width: 100px;
+    
+}
+
+
+.nav-banner {
+    
+    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    background-color: #9B2915;
+    width: 100%;
+    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
+    border-top: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line above the navbar */
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line below the navbar */
+    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
+    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+
+    display: flex;
+    justify-content: center; /* Ensures the nav items are centered horizontally */
+    align-items: center; /* Centers nav items vertically */
+    text-align: center; /* Centers text in navbar */
+    margin: 0 auto; /* Ensures the navbar stays centered */
+    left: 50%; /* Move the container to the center */
+    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
+    position: absolute; /* Change to absolute positioning */
+    margin-top: -30px; /* Moves text up */
+}
+
+
+.nav-banner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex; /* Aligns list items horizontally */
+    justify-content: center; /* Purple: Center-aligns navigation buttons */
+    gap: 30px; /* Purple: Adds spacing between buttons */
+}
+
+.nav-banner ul li {
+    display: inline;
+}
+
+.nav-banner ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #E9B44C;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-banner ul li a:hover {
+    background-color: #ff9933; /* Purple: Adds hover effect with orange */
+}
+
 
 /* Contact Container */
 .contact-container {
-    max-width: 600px;
-    margin: 100px auto 0 auto;
-    padding: 30px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(155, 41, 21, 0.15);
-    font-family: 'Montserrat', sans-serif;
+  background: #9B2915;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin: 180px auto 80px auto; 
+  max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+
 
 /* Contact Header */
 .contact-header {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .contact-header h2 {
     font-size: 2rem;
-    color: #9B2915;
+    color: #E9B44C; 
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 .contact-header p {
-    color: #555;
+    color: #FFFFFF; /* visible on maroon */
     font-size: 1.1rem;
 }
 
@@ -68,7 +171,7 @@ body {
 }
 .contact-info p {
     margin: 6px 0;
-    color: #333;
+    color: #FFFFFF;
     font-size: 1rem;
 }
 
@@ -77,24 +180,27 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #9B2915;
+    color: #E9B44C;
 }
+
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: inherit;
-    background: #FAF3E3;
-}
-.contact-form textarea {
+    background: #fff;
+    color: #333;
     resize: vertical;
+    width: 100%;
+     padding: 10px;
+     margin-bottom: 3px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 1rem;
+}
+
+.contact-form {
+    margin-top: -15px; /* adjust this value to move the labels and text boxss up or down */
 }
 .contact-form button {
-    background: #9B2915;
+    background: #ff9933;
     color: #fff;
     border: none;
     padding: 12px 28px;
@@ -105,8 +211,58 @@ body {
     transition: background 0.2s;
 }
 .contact-form button:hover {
-    background: #7a1f10;
+    background: #E9B44C;
 }
+
+
+
+.confirmation-message {
+    display: block; /* keep it block for animation */
+    background-color: #7a1f10; /* dark red */
+    color: #FFFFFF; /* white text */
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+    /* initial hidden state */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease; /* slide & fade animation */
+}
+
+.confirmation-message.show {
+    opacity: 1;
+    transform: translateY(0); /* slide into place */
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333 !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #E9B44C; /* orange like your index page */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FF9933; /* lighter orange on hover */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 700px) {
