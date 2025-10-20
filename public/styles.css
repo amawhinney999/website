@@ -482,18 +482,37 @@ section {
 
 
 
-#google-reviews { /*THIS IS THE SECTION ONLY FOR 'OUR LOCATION' (WHICH IS IS SMALL SECTION WITHIN THE #CONTACT SECTION). THIS IS BECAUSE I HAVE A SECTION WITHIN A SECTION. IN THE #CONTACT CODE BELOW THIS, I WILL CHANGE THE BG COLOR OF THE CONTACT US SECTION */
-    background-color: #E9B44C; /* same yellow as Our Services */
-    padding: 80px 0; /* spacing top and bottom */
-    text-align: center; /* centers the heading and iframe */
+/* Google Reviews Section */
+#google-reviews {
+    background-color: #E9B44C; /* yellow for location section */
+    padding: 80px 0;
+    text-align: center;
 }
 
-/* Contact Section Background */
-#contact {
-    background-color: #E9B44C; /* same yellow as Our Services */
-    padding: 80px 0; /* spacing around content */
-    text-align: center; /* keeps headings/forms centered */
+/* Animation Video Section */
+.animation-section {
+    max-width: 900px;
+    margin: 80px auto 120px auto;
+    padding: 40px;
+    
+    border-radius: 12px;
+    text-align: center;
 }
+
+.animation-section video {
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
 
 
 

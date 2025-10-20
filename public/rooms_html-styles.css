@@ -22,11 +22,14 @@ body {
   z-index: 10;
 }
 
-.hotel-school-logo {
-  height: 50px;
-  position: absolute;
-  left: 0;
-  top: 15px;
+.hotel-school-logo { 
+    width: auto;
+    height: 50px; 
+    max-height: 50px;
+    position: absolute; /* Moves it out of the default flow */
+    left: 0; /* Pushes it to the very left */
+    top: 15px; /* Centers it vertically */
+    transform: translateY(-50%); /* Adjusts exact center alignment */
 }
 
 .year {
@@ -37,17 +40,20 @@ body {
 }
 
 .hotel-logo {
-  height: 60px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 15px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 .stars {
-  position: absolute;
-  left: 55%;
-  top: 30px;
+  font-size: 18px;
+    position: absolute;
+    top: 30px;
+     left: 55%;
+     width: 100px;
 }
 
 /* Navbar */

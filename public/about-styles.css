@@ -63,11 +63,6 @@ body {
 /* Stars on the Right */
 .stars {
     font-size: 18px;
-    /*
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-   */
     position: absolute;
     top: 30px;
      left: 55%;
