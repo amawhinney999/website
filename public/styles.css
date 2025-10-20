@@ -1,21 +1,20 @@
 /* Global Styles */
+html {
+    scroll-behavior: smooth; /* smooth scrolling for all anchor links */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    html {
-        scroll-behavior: smooth;  /* This will apply smooth scrolling for all anchor links and page navigation */
-    }
-    
-    
-
 }
 
+/* Apply Montserrat globally */
 body {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-     background-color: #FFF8E7;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #FFF8E7;
+    overflow-x: hidden;
 }
 
 
@@ -295,6 +294,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Hero Section Styling */
@@ -397,7 +397,7 @@ section {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: black; /* White text color for better contrast */
+    color: white; /* White text color for better contrast */
 }
 
 #rooms p {

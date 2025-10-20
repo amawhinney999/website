@@ -29,7 +29,7 @@ body {
 
 .hotel-school-logo { 
     width: auto;
-    height: 50px; /* Keep this if needed */
+    height: 50px; 
     max-height: 50px;
     position: absolute; /* Moves it out of the default flow */
     left: 0; /* Pushes it to the very left */
@@ -137,9 +137,12 @@ body {
   color: white;
   padding: 60px 40px;
   border-radius: 12px;
-  margin: 180px auto 80px auto; 
+  margin: 200px auto 80px auto; 
   max-width: 700px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+   position: relative;
+  
+  
 }
 
 

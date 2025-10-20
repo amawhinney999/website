@@ -1,41 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Don Bosco Hotel Sihanoukville</title>
-    <meta name="description" content="Learn more about Don Bosco Hotel Sihanoukville.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms - Don Bosco Hotel Sihanoukville</title>
+  <meta name="description" content="Explore the rooms offered at Don Bosco Hotel Sihanoukville.">
+  <link rel="stylesheet" href="rooms_html-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header (First Banner with Logo, 2007, and Stars) -->
-    <header>
-        <div class="header-content">
-            <span class="year">2007</span>
-            <img src="images/technicalSchool.png" alt="Don Bosco Hotel Logo" class="hotel-logo">
-            <div class="stars">⭐⭐⭐⭐</div>
-        </div>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="index.html"><img src="images/LOGO-WEBSITE.png" alt="Hotel School SHV Logo" class="hotel-school-logo"></a>
+      <span class="year">est. 2007</span>
+      <img src="images/technicalSchool.png" alt="Don Bosco Hotel Logo" class="hotel-logo">
+      <div class="stars">⭐⭐⭐⭐</div>
+    </div>
+  </header>
 
-    <!-- Navigation Bar (Second Banner) -->
-    <nav class="nav-banner">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav class="nav-banner">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="rooms.html" class="active">Rooms</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    
+<!-- Rooms Section -->
+<div class="rooms-wrapper"> 
+  <div class="rooms-container">
+    <h2>Our Rooms</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Don Bosco Hotel Sihanoukville | Follow us on  
-            <a href="#">Facebook</a> | <a href="#">Instagram</a>
-        </p>
-    </footer>
+    <!-- Room 1 -->
+    <div class="room-row" data-pool="yes" data-balcony="yes">
+      <a href="familyroom.html" class="room-thumb">
+        <img src="images/room-Family-room-4.jpeg" alt="Family Room">
+      </a>
+      <div class="room-details">
+        <h3>Family Room</h3>
+        <p>Spacious room perfect for families. Includes two double beds, modern amenities, and a private bathroom.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 2</span>
+        <span>Pool View: ✔</span>
+        <span>Balcony: ✔</span>
+      </div>
+    </div>
+<!-- Room 2 -->
+    <div class="room-row" data-pool="no" data-balcony="yes">
+      <a href="terracekingroom.html" class="room-thumb">
+        <img src="images/room-Terrace-King-3.jpeg" alt="Terrace King Room">
+      </a>
+      <div class="room-details">
+        <h3>Terrace King Room</h3>
+        <p>Elegant king-size room with private terrace, perfect for couples seeking comfort and tranquility.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 1</span>
+        <span>Pool View: ✖</span>
+        <span>Balcony: ✔</span>
+      </div>
+    </div>
+
+      <!-- Room 3 -->
+    <div class="room-row" data-pool="yes" data-balcony="no">
+      <a href="poolviewroom.html" class="room-thumb">
+        <img src="images/room-Pool-view-cottage-1.jpeg" alt="Pool View Double Room">
+      </a>
+      <div class="room-details">
+        <h3>Pool View Cottage Room</h3>
+        <p>Comfortable cottage room with pool view, ideal for small families or couples. Includes private bathroom and minibar.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 1</span>
+        <span>Pool View: ✔</span>
+        <span>Balcony: ✖</span>
+      </div>
+    </div>
+
+    <!-- Room 4 -->
+    <div class="room-row" data-pool="no" data-balcony="no">
+      <a href="standardtwinroom.html" class="room-thumb">
+        <img src="images/room-standard-twin-room.jpeg" alt="Standard Twin Room">
+      </a>
+      <div class="room-details">
+        <h3>Standard Twin Room</h3>
+        <p>Practical and comfortable twin room. Perfect for travelers looking for simple, clean accommodation.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 2</span>
+        <span>Pool View: ✖</span>
+        <span>Balcony: ✖</span>
+      </div>
+    </div>
+
+     <!-- Room 5 -->
+    <div class="room-row" data-pool="yes" data-balcony="yes">
+      <a href="standardkingroom.html" class="room-thumb">
+        <img src="images/room-Standard-king-room-2.jpeg" alt="King Pool View Room">
+      </a>
+      <div class="room-details">
+        <h3>Standard King Room</h3>
+        <p>King-size room with stunning pool view, modern furnishings, and private balcony for maximum relaxation.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 1</span>
+        <span>Pool View: ✔</span>
+        <span>Balcony: ✔</span>
+      </div>
+    </div>
+
+    <!-- Room 6 -->
+    <div class="room-row" data-pool="no" data-balcony="yes">
+      <a href="terracetwinroom.html" class="room-thumb">
+        <img src="images/room-Terrace-Twin-1.jpeg" alt="Queen Balcony Room">
+      </a>
+      <div class="room-details">
+        <h3>Terrace Twin Room</h3>
+        <p>Cozy terrace twin room with private balcony. Perfect for solo travelers or couples wanting comfort and convenience.</p>
+      </div>
+      <div class="room-attributes">
+        <span>Beds: 1</span>
+        <span>Pool View: ✖</span>
+        <span>Balcony: ✔</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Don Bosco Hotel Sihanoukville | Follow us on  
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </p>
+  </footer>
 
 </body>
 </html>

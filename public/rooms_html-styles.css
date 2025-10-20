@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #FF9933, #FFF8E7);
+  color: #fff;
+}
+
+/* Header */
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.hotel-school-logo {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.year {
+  position: absolute;
+  top: 35px;
+  right: 55%;
+  font-weight: bold;
+}
+
+.hotel-logo {
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.stars {
+  position: absolute;
+  left: 55%;
+  top: 30px;
+}
+
+/* Navbar */
+.nav-banner {
+  top: 120px;
+  background-color: #9B2915;
+  width: 100%;
+  z-index: 5;
+  border-top: 1px solid rgba(255, 145, 0, 0.87);
+  border-bottom: 1px solid rgba(255, 145, 0, 0.87);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -30px;
+}
+
+.nav-banner ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-banner ul li a {
+  color: #E9B44C;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-banner ul li a:hover,
+.nav-banner ul li a.active {
+  background-color: #ff9933;
+  color: white;
+}
+
+/* Maroon wrapper for Rooms (like About/Services) */
+.rooms-wrapper {
+  max-width: 1200px;
+  margin: 200px auto 80px;
+  padding: 40px;
+  background-color: #9B2915;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Rooms container inside maroon wrapper */
+.rooms-container {
+  padding: 20px;
+}
+
+.rooms-container h2 {
+  text-align: center;
+  color: #E9B44C;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Room Row */
+.room-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.05); /* semi-transparent */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.room-row:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255,255,255,0.1);
+}
+
+
+/* Thumbnail */
+.room-thumb img {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.room-thumb img:hover {
+  transform: scale(1.05);
+}
+
+/* Room Details */
+.room-details {
+  flex: 1;
+}
+
+.room-details h3 {
+  color: #E9B44C;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.room-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Room Attributes */
+.room-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+  min-width: 120px;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333 !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border: none; /* REMOVE any border that may cause orange bar */
+  box-shadow: none; /* ensure no shadow appears */
+}
+
+footer a {
+  color: #E9B44C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff9933;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .room-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .room-attributes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .room-thumb img {
+    width: 100%;
+    height: auto;
+  }
+}

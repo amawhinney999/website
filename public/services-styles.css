@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #FF9933, #FFF8E7);
+  color: #fff;
+}
+
+/* Header */
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.hotel-school-logo {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.year {
+  position: absolute;
+  top: 35px;
+  right: 55%;
+  font-weight: bold;
+}
+
+.hotel-logo {
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.stars {
+  position: absolute;
+  left: 55%;
+  top: 30px;
+}
+
+/* Navbar */
+.nav-banner {
+    top: 120px;
+    background-color: #9B2915;
+    width: 100%;
+    z-index: 5;
+    border-top: 1px solid rgba(255, 145, 0, 0.87);
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: -30px;
+}
+
+.nav-banner ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-banner ul li a {
+  color: #E9B44C;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-banner ul li a:hover,
+.nav-banner ul li a.active {
+  background-color: #ff9933;
+  color: white;
+}
+
+/* Services Container */
+.services-container {
+  background: #9B2915;
+  max-width: 900px;
+  margin: 200px auto 80px;
+  border-radius: 12px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  color: #E9B44C;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* Service Item Layout */
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-item img {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  color: #E9B44C;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-text p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- ABOUT-style card effect --- */
+.service-text .about-card {
+  background-color: rgba(255,255,255,0.06); /* semi-transparent grey */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.service-text .about-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255,255,255,0.1);
+}
+
+.service-text .about-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #333 !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #E9B44C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff9933;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+  }
+
+  .service-item.reverse {
+    flex-direction: column;
+  }
+
+  .service-item img {
+    width: 100%;
+  }
+
+  .services-container {
+    padding: 30px 20px;
+    margin: 200px 10px 60px;
+  }
+}
