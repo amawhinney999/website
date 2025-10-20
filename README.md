@@ -9,3 +9,5 @@ However, in April I recieved other prioritisations which made this go on hold, a
 So I've decided to finish it as a personal project, since I really like the idea and look of the website.
 
 - Alex
+
+https://dbshv-a2614.web.app/index.html
