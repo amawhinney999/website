@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Room | Don Bosco Hotel Sihanoukville</title>
+    <title>Pool-View Cottage Room | Don Bosco Hotel Sihanoukville</title>
     <meta name="description" content="Relax in our Pool-View Cottage Room, offering comfort and luxury with stunning views of the hotel’s pool.">
     <link rel="stylesheet" href="room-styles.css"> <!-- Link to the reusable CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -60,9 +60,9 @@
 
             <!-- Gallery Thumbnails -->
         <div class="gallery">
-            <img src="images/amok.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('room-Pool-view-cottage-1.jpeg', 1)">
-            <img src="images/spa.png" alt="Image 2" class="thumbnail" onclick="changeMainImage('room-Standard-king-room-2.jpeg', 2)">
-            <img src="images/cooks.jpeg" alt="Image 3" class="thumbnail" onclick="changeMainImage('room-Family-room-4.jpeg', 3)">
+            <img src="images/roomphotos/poolview1of3.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('images/roomphotos/poolview1of3.jpg', 1)">
+            <img src="images/room-Pool-view-cottage-1.jpeg" alt="Image 2" class="thumbnail" onclick="changeMainImage('images/room-Pool-view-cottage-1.jpeg', 2)">
+            <img src="images/roomphotos/bathroom3.jpg" alt="Image 3" class="thumbnail" onclick="changeMainImage('images/roomphotos/bathroom3.jpg', 3)">
 
             <script>
                 // Function to change the main image
@@ -70,7 +70,7 @@
                     // Find the main image container
                     const mainImage = document.querySelector('.room-image img');
                     // Change the source of the main image to the clicked thumbnail's image
-                    mainImage.src = 'images/' + imageSrc; // Assuming the images are in the "images" folder
+                    mainImage.src = imageSrc; // Assuming the images are in the "images" folder
                      // Update the counter
                     const counter = document.querySelector('.gallery-subtext');
                     counter.textContent = index + ' of 3';

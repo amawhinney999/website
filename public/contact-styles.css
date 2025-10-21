@@ -130,6 +130,12 @@ body {
     background-color: #ff9933; /* Purple: Adds hover effect with orange */
 }
 
+.nav-banner ul li a:hover,
+.nav-banner ul li a.active {
+  background-color: #ff9933;
+  color: white;
+}
+
 
 /* Contact Container */
 .contact-container {

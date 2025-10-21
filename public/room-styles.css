@@ -184,12 +184,22 @@ body {
     margin-top: 40px;
 }
 
+.room-image {
+  width: 100%;
+  max-width: 800px;
+  height: 500px; /* fixed height to keep layout consistent */
+  margin: 0 auto;
+  overflow: hidden; /* hides any part that exceeds container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .room-image img {
-    width: 100%; /* Ensure the main image takes up full width of its container */
-    max-width: 800px; /* Limit the size to avoid it being too large */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image */
-    margin: 0 auto; /* Centering the image */
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps full image visible */
+  border-radius: 10px;
 }
 
 .room-info {
@@ -236,12 +246,13 @@ body {
     margin: 5px 0; /* Add space between list items */
   }
   
+  
   .gallery-subtext {
-    text-align: center; /* Center the text */
-    font-size: 1.2rem; /* Adjust text size */
-    font-weight: bold;
-    margin-bottom: 10px; /* Space between text and images */
-    color: #FFFFFF; /* Match website theme */
+  text-align: center;         /* Center horizontally */
+  color: white;               /* White text */
+  font-weight: bold;          /* Slight emphasis */
+  margin-top: 10px;           /* Spacing below main image */
+  font-size: 1rem;            /* Comfortable size */
 }
 
 
@@ -256,13 +267,13 @@ body {
   
   /* Thumbnail image styling */
   .gallery img {
-    width: 80px; /* Small size for thumbnails */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Pointer cursor on hover */
-    border: 2px solid #ccc; /* Optional border */
-    border-radius: 5px; /* Optional rounded corners */
-    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
-  }
+  width: 100px; /* consistent width for all thumbnails */
+  height: 70px; /* consistent height */
+  object-fit: cover; /* keeps aspect ratio while cropping evenly */
+  border-radius: 8px; /* optional — makes them look cleaner */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
   
   /* Hover effect on thumbnails */
   .gallery img:hover {
