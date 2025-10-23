@@ -43,10 +43,10 @@ body {
 /* Loading Text */
 
 .loading-text {
-    font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
-    font-size: 24px; /* Keep the text size */
-    font-weight: bold; /* Make it bold */
-    color: #E9B44C; /* Ensure it's visible */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #E9B44C; 
 }
 
 #loading-screen.hide {
@@ -84,9 +84,9 @@ body {
 .header-content {
     position: absolute;  
     top: 0; /* Stick it to the very top */
-    left: 50%; /* Center it */
+    left: 50%; 
     transform: translateX(-50%); /* Keeps it properly centered */
-    z-index: 10; /* Ensures it stays above the hero */
+    z-index: 10; 
     width: 100%; /* Make sure it stretches across */
     
 }
@@ -95,10 +95,10 @@ body {
     width: auto;
     height: 50px; /* Keep this if needed */
     max-height: 50px;
-    position: absolute; /* Moves it out of the default flow */
-    left: 0; /* Pushes it to the very left */
-    top: 15px; /* Centers it vertically */
-    transform: translateY(-50%); /* Adjusts exact center alignment */
+    position: absolute; 
+    left: 0; 
+    top: 15px; 
+    transform: translateY(-50%); 
 }
 
 
@@ -143,14 +143,14 @@ body {
 
 .nav-banner {
     
-    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    top: 120px; 
     
     width: 100%;
-    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
-    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Purple: Adds a thin white line above the navbar */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Purple: Adds a thin white line below the navbar */
-    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
-    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+    z-index: 5; 
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 
     display: flex;
     justify-content: center; /* Ensures the nav items are centered horizontally */
@@ -158,8 +158,8 @@ body {
     text-align: center; /* Centers text in navbar */
     margin: 0 auto; /* Ensures the navbar stays centered */
     left: 50%; /* Move the container to the center */
-    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
-    position: absolute; /* Change to absolute positioning */
+    transform: translateX(-50%); /* Center it properly */
+    position: absolute; 
     margin-top: -30px; /* Moves text up */
 }
 
@@ -169,8 +169,8 @@ body {
     padding: 0;
     margin: 0 auto;
     display: flex; /* Aligns list items horizontally */
-    justify-content: center; /* Purple: Center-aligns navigation buttons */
-    gap: 30px; /* Purple: Adds spacing between buttons */
+    justify-content: center; /* Center-aligns navigation buttons */
+    gap: 30px; /*  Adds spacing between buttons */
     padding-left: 80px;
 }
 
@@ -192,7 +192,7 @@ body {
 }
 
 .nav-banner ul li a:hover {
-    background-color: #ff9933; /* Purple: Adds hover effect with orange */
+    background-color: #ff9933; 
 }
 
 
@@ -261,28 +261,28 @@ body {
     z-index: 2;
     text-shadow: 2px 2px 5px black;
     padding: 20px;
-    padding-top: 80px; /* Adjust the value to move the text down */
+    padding-top: 80px; 
 }
 
 #hero .hero-text h2 {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    font-size: 48px; /* Large font size */
-    font-weight: 700; /* Bold weight for emphasis */
-    color:#E9B44C; /* Set the text color to white */
-    text-transform: uppercase; /* Make it uppercase (similar to the Ekal website) */
-    letter-spacing: 3px; /* Add some letter spacing for a more modern look */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add a subtle text shadow for readability */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px; 
+    font-weight: 700; 
+    color:#E9B44C; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
     margin-bottom: 20px; /* Space between the title and the text below */
 }
 
 #hero .hero-text p {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    font-size: 18px; /* Same size as the previous text */
-    font-weight: 700; /* Bold weight for emphasis */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 18px; 
+    font-weight: 700; 
     color: #E9B44C; /* Text color */
-    text-transform: uppercase; /* Uppercase letters */
-    letter-spacing: 2px; /* Slight letter spacing */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: shadow effect for readability */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 /* Button */
@@ -321,8 +321,8 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5%; /* Position it towards the bottom of the hero section */
-    background-color: maroon; /* Your color scheme */
+    bottom: 5%; 
+    background-color: maroon; 
     color: white;
     border: none;
     width: 50px; 
@@ -336,7 +336,7 @@ body {
 
 .scroll-btn:hover {
   background-color: rgba(255, 255, 255, 0.2); /* keep this one */
-  transform: translateX(-50%) scale(1.3); /* include both translateX and scale */
+  transform: translateX(-50%) scale(1.3); 
 }
 
 
@@ -387,9 +387,9 @@ section {
 #rooms {
     padding: 50px 20px;
     text-align: center;
-    background-color: #9B2915; /* Orange background */
-    border-radius: 10px; /* Optional: for rounded corners */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
+    background-color: #9B2915; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
 }
 
 /* Add padding for text and make sure the content inside the section is spaced out correctly */
@@ -397,12 +397,12 @@ section {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: white; /* White text color for better contrast */
+    color: white; 
 }
 
 #rooms p {
     font-size: 18px;
-    color: white; /* White text for the subtext */
+    color: white; 
     margin-bottom: 40px;
 }
 
@@ -414,12 +414,12 @@ section {
     gap: 10px;
     width: 100%;
 }
-.image-grid a img {  /* NEW UPDATE */
-    transition: transform 0.3s ease-in-out; /* NEW UPDATE */
+.image-grid a img {  
+    transition: transform 0.3s ease-in-out; 
 } 
 
-.image-grid a:hover img {  /* NEW UPDATE */
-    transform: scale(1.1); /* Enlarge the image on hover */ /* NEW UPDATE */
+.image-grid a:hover img { 
+    transform: scale(1.1); /* Enlarge the image on hover */ 
 }
 
 .image-container {
@@ -428,8 +428,8 @@ section {
 }
 
 .image-grid img {
-    width: 100%; /* Makes each image fill its grid column */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -466,9 +466,9 @@ section {
 
 .watermark-cover {
     position: absolute;
-    left: 78%; /* Adjust the position of the watermark TO HIDE WATERMARK */
+    left: 78%; /* Adjust the position  TO HIDE WATERMARK */
     transform: translateX(-50%);
-    bottom: -2725PX;  /* Adjust the position of the watermark TO hide watermark */
+    bottom: -2725PX;  /* Adjust the position  TO hide watermark */
     width: 240px;
     height: 40px;
     background-color: white;
@@ -556,12 +556,12 @@ button:hover {
     margin-top: -40px; /* Negative margin to pull the section closer */
 }
 
-/* Apply Merriweather font only to the title in the About section */
+
 #about-hotel .about-text h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px; /* Font size similar to the example */
-    font-weight: 700; /* Bold weight for the title */
-    color: black; /* Dark color for the title */
+    font-size: 32px; 
+    font-weight: 700; 
+    color: black; 
     margin-bottom: 20px;
     /*margin-left: -50px; */
 }
@@ -576,10 +576,10 @@ button:hover {
 }
 
 .about-image img {
-    width: 70%; /* NEW: Increase the width of the image */
-    height: auto; /* NEW: Maintain aspect ratio */
-    border-radius: 10px; /* NEW: Optional: add border radius */
-    transition: width 0.3s ease; /* NEW: Smooth transition for resizing */
+    width: 70%; /* width of the image */
+    height: auto; 
+    border-radius: 10px; 
+    transition: width 0.3s ease; 
 }
 
 .about-text {
@@ -609,9 +609,9 @@ button:hover {
 }
 
 #our-services h2 {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
-    font-size: 32px; /* Adjust if needed */
-    font-weight: 700; /* Bold */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 32px; 
+    font-weight: 700; 
 }
 
 
@@ -619,8 +619,8 @@ button:hover {
 .service-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px; /* Space between buttons and image */
+    align-items: center;
+    gap: 30px; 
 }
 
 .service-btn-container {
@@ -634,7 +634,7 @@ button:hover {
     padding: 20px; /* Add space inside the box */
     background-color: white; /* White background for the box */
     border-radius: 10px; /* Round the corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a floating effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -652,7 +652,7 @@ button:hover {
     align-items: center;
     gap: 10px; /* Space between title and subtext */
     transition: background-color 0.3s;
-    width: 300px; /* Adjust width for larger buttons */
+    width: 300px; 
     
 }
 
@@ -663,50 +663,51 @@ button:hover {
 .service-icon {
     width: 30px;  /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures it stays above text */
-    margin: 0 auto 5px; /* Centers the icon and adds spacing */
+    display: block; 
+    margin: 0 auto 5px; 
 }
 
 /* button titles */
 .service-btn .btn-title {
-    font-family: 'Montserrat', sans-serif; /* NEW: Apply Montserrat */
-    font-size: 20px; /* Adjust title font size */
-    font-weight: 700; /* Bold weight for emphasis */
-    font-weight: bold; /* Make title bold */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+    font-weight: 700; 
+    font-weight: bold; 
     text-transform: uppercase;
-    color: #E9B44C; /* NEW: Ensures the text is white */
+    color: #E9B44C; 
     white-space: nowrap;
 }
 
 /* button subtext  */
 .service-btn .btn-subtext {
-    font-size: 14px; /* Adjust subtext font size */
+    font-size: 14px;
     font-weight: normal;
-    color: #E9B44C; /* NEW: Ensures the text is white */
+    color: #E9B44C; 
     font-family: 'Montserrat', sans-serif;
 }
 
 .service-content {
     flex: 1;
-    padding-left: 20px; /* NEW: Move the image further to the right */
+    padding-left: 20px; 
     display: flex;
-    justify-content: center; /* Align image to the right */ 
-    align-items: center; /* Center the image vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 #service-image {
-    margin-top: 60px; /* Adjust this value to move the image down */
-    margin-bottom: 20px; /* Optionally, add bottom margin for balance */
-    width: 100%; /* Ensure the image takes up the full container width */
-    max-width: 500px; /* Adjust as needed */
-    margin-left: 0; /* moves image 50px to the left */
+  width: 100%;
+  max-width: 500px;
+  height: 350px; /* fixed height so all are consistent */
+  overflow: hidden; /* hides excess parts of larger images */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 #service-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
 }
 
 
@@ -724,7 +725,7 @@ footer {
 }
 
 footer a {
-    color: #ff6600; /* Ensure the links are visible */
+    color: #ff6600; 
     text-decoration: none;
 }
 

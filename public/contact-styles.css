@@ -19,11 +19,11 @@ body {
 /* Header Content (Keeps 2007, Logo, and Stars in One Row) */
 .header-content {
     position: absolute;  
-    top: 0; /* Stick it to the very top */
-    left: 50%; /* Center it */
-    transform: translateX(-50%); /* Keeps it properly centered */
-    z-index: 10; /* Ensures it stays above the hero */
-    width: 100%; /* Make sure it stretches across */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+    width: 100%; 
     
 }
 
@@ -31,10 +31,10 @@ body {
     width: auto;
     height: 50px; 
     max-height: 50px;
-    position: absolute; /* Moves it out of the default flow */
-    left: 0; /* Pushes it to the very left */
-    top: 15px; /* Centers it vertically */
-    transform: translateY(-50%); /* Adjusts exact center alignment */
+    position: absolute; 
+    left: 0; 
+    top: 15px; 
+    transform: translateY(-50%); 
 }
 
 
@@ -79,24 +79,24 @@ body {
 
 .nav-banner {
     
-    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    top: 120px; 
     background-color: #9B2915;
     width: 100%;
-    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
-    border-top: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line above the navbar */
-    border-bottom: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line below the navbar */
-    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
-    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+    z-index: 5; 
+    border-top: 1px solid rgba(255, 145, 0, 0.87); 
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87); 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 
     display: flex;
-    justify-content: center; /* Ensures the nav items are centered horizontally */
-    align-items: center; /* Centers nav items vertically */
-    text-align: center; /* Centers text in navbar */
-    margin: 0 auto; /* Ensures the navbar stays centered */
-    left: 50%; /* Move the container to the center */
-    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
-    position: absolute; /* Change to absolute positioning */
-    margin-top: -30px; /* Moves text up */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: 0 auto; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    position: absolute; 
+    margin-top: -30px; 
 }
 
 
@@ -104,9 +104,9 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    display: flex; /* Aligns list items horizontally */
-    justify-content: center; /* Purple: Center-aligns navigation buttons */
-    gap: 30px; /* Purple: Adds spacing between buttons */
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .nav-banner ul li {
@@ -127,7 +127,7 @@ body {
 }
 
 .nav-banner ul li a:hover {
-    background-color: #ff9933; /* Purple: Adds hover effect with orange */
+    background-color: #ff9933; 
 }
 
 .nav-banner ul li a:hover,
@@ -169,7 +169,7 @@ body {
     letter-spacing: 1px;
 }
 .contact-header p {
-    color: #FFFFFF; /* visible on maroon */
+    color: #FFFFFF; 
     font-size: 1.1rem;
 }
 
@@ -227,8 +227,8 @@ body {
 
 .confirmation-message {
     display: block; /* keep it block for animation */
-    background-color: #7a1f10; /* dark red */
-    color: #FFFFFF; /* white text */
+    background-color: #7a1f10; 
+    color: #FFFFFF; 
     padding: 15px;
     border-radius: 6px;
     text-align: center;
@@ -262,13 +262,13 @@ footer {
 }
 
 footer a {
-    color: #E9B44C; /* orange like your index page */
+    color: #E9B44C; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #FF9933; /* lighter orange on hover */
+    color: #FF9933; 
 }
 
 

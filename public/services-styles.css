@@ -26,10 +26,10 @@ body {
     width: auto;
     height: 50px; 
     max-height: 50px;
-    position: absolute; /* Moves it out of the default flow */
-    left: 0; /* Pushes it to the very left */
-    top: 15px; /* Centers it vertically */
-    transform: translateY(-50%); /* Adjusts exact center alignment */
+    position: absolute; 
+    left: 0; 
+    top: 15px; 
+    transform: translateY(-50%); 
 }
 
 .year {

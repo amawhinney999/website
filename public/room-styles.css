@@ -18,22 +18,22 @@ body {
 /* Header Content (Keeps 2007, Logo, and Stars in One Row) */
 .header-content {
     position: absolute;  
-    top: 0; /* Stick it to the very top */
-    left: 50%; /* Center it */
-    transform: translateX(-50%); /* Keeps it properly centered */
-    z-index: 10; /* Ensures it stays above the hero */
-    width: 100%; /* Make sure it stretches across */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+    width: 100%; 
     
 }
 
 .hotel-school-logo { 
     width: auto;
-    height: 50px; /* Keep this if needed */
+    height: 50px; 
     max-height: 50px;
-    position: absolute; /* Moves it out of the default flow */
-    left: 0; /* Pushes it to the very left */
-    top: 15px; /* Centers it vertically */
-    transform: translateY(-50%); /* Adjusts exact center alignment */
+    position: absolute; 
+    left: 0; 
+    top: 15px; 
+    transform: translateY(-50%); 
 }
 
 
@@ -78,24 +78,24 @@ body {
 
 .nav-banner {
     
-    top: 120px; /* Purple: Adjusts the navbar's vertical position to appear below the header */
+    top: 120px; 
     background-color: #9B2915;
     width: 100%;
-    z-index: 5; /* Purple: Ensures the navbar is above other content but not above the header */
-    border-top: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line above the navbar */
-    border-bottom: 1px solid rgba(255, 145, 0, 0.87); /* Purple: Adds a thin white line below the navbar */
-    padding-top: 20px; /* Purple: Creates space above the navbar content (pushes the top line down) */
-    padding-bottom: 20px; /* Purple: Creates space below the navbar content (pushes the bottom line up) */
+    z-index: 5; 
+    border-top: 1px solid rgba(255, 145, 0, 0.87); 
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87); 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 
     display: flex;
-    justify-content: center; /* Ensures the nav items are centered horizontally */
-    align-items: center; /* Centers nav items vertically */
-    text-align: center; /* Centers text in navbar */
-    margin: 0 auto; /* Ensures the navbar stays centered */
-    left: 50%; /* Move the container to the center */
-    transform: translateX(-50%); /* Compensates for the width to achieve perfect centering */
-    position: absolute; /* Change to absolute positioning */
-    margin-top: -30px; /* Moves text up */
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    position: absolute; 
+    margin-top: -30px; 
 }
 
 
@@ -103,9 +103,9 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    display: flex; /* Aligns list items horizontally */
-    justify-content: center; /* Purple: Center-aligns navigation buttons */
-    gap: 30px; /* Purple: Adds spacing between buttons */
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .nav-banner ul li {
@@ -126,7 +126,7 @@ body {
 }
 
 .nav-banner ul li a:hover {
-    background-color: #ff9933; /* Purple: Adds hover effect with orange */
+    background-color: #ff9933; 
 }
 
 
@@ -173,8 +173,8 @@ body {
     text-align: center;
     color:#E9B44C;
     text-transform: uppercase;
-    font-weight: 700; /* Bold weight for emphasis */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-weight: 700; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .room-details {
@@ -187,9 +187,9 @@ body {
 .room-image {
   width: 100%;
   max-width: 800px;
-  height: 500px; /* fixed height to keep layout consistent */
+  height: 500px; 
   margin: 0 auto;
-  overflow: hidden; /* hides any part that exceeds container */
+  overflow: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@ body {
 .room-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* keeps full image visible */
+  object-fit: contain; 
   border-radius: 10px;
 }
 
@@ -234,25 +234,25 @@ body {
     accent-color: green; /* Set checkbox color to green */
   }
   
-  /* Optional: Style for the list to make it more appealing */
+  
   .room-features {
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
   }
   
   .room-features li {
-    font-size: 1.2em; /* Customize the text size if necessary */
-    margin: 5px 0; /* Add space between list items */
+    font-size: 1.2em; 
+    margin: 5px 0; 
   }
   
   
   .gallery-subtext {
   text-align: center;         /* Center horizontally */
-  color: white;               /* White text */
-  font-weight: bold;          /* Slight emphasis */
+  color: white;              
+  font-weight: bold;         
   margin-top: 10px;           /* Spacing below main image */
-  font-size: 1rem;            /* Comfortable size */
+  font-size: 1rem;          
 }
 
 
@@ -270,7 +270,7 @@ body {
   width: 100px; /* consistent width for all thumbnails */
   height: 70px; /* consistent height */
   object-fit: cover; /* keeps aspect ratio while cropping evenly */
-  border-radius: 8px; /* optional — makes them look cleaner */
+  border-radius: 8px; 
   cursor: pointer;
   transition: transform 0.2s ease;
 }

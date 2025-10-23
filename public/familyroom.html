@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Room | Don Bosco Hotel Sihanoukville</title>
     <meta name="description" content="Relax in our Pool-View Cottage Room, offering comfort and luxury with stunning views of the hotel’s pool.">
-    <link rel="stylesheet" href="room-styles.css"> <!-- Link to the reusable CSS file -->
+    <link rel="stylesheet" href="room-styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -72,7 +72,7 @@
                     // Find the main image container
                     const mainImage = document.querySelector('.room-image img');
                     // Change the source of the main image to the clicked thumbnail's image
-                    mainImage.src = imageSrc; // Assuming the images are in the "images" folder
+                    mainImage.src = imageSrc; // THIS WAS CHANGED FROM "images/ + " imageSrc     because i changed the photos folder on the src above
                      // Update the counter
                     const counter = document.querySelector('.gallery-subtext');
                     counter.textContent = index + ' of 3';

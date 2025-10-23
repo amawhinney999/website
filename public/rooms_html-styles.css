@@ -26,10 +26,10 @@ body {
     width: auto;
     height: 50px; 
     max-height: 50px;
-    position: absolute; /* Moves it out of the default flow */
-    left: 0; /* Pushes it to the very left */
-    top: 15px; /* Centers it vertically */
-    transform: translateY(-50%); /* Adjusts exact center alignment */
+    position: absolute; 
+    left: 0; 
+    top: 15px; 
+    transform: translateY(-50%); 
 }
 
 .year {
@@ -127,7 +127,7 @@ body {
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(255,255,255,0.05); /* semi-transparent */
+  background-color: rgba(255,255,255,0.05); 
   margin-bottom: 20px;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -185,8 +185,8 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 60px;
-  border: none; /* REMOVE any border that may cause orange bar */
-  box-shadow: none; /* ensure no shadow appears */
+  border: none; 
+  box-shadow: none; 
 }
 
 footer a {
