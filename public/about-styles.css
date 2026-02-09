@@ -9,7 +9,7 @@
 body {
     background: linear-gradient(to bottom, #FF9933, #FFF8E7);
     color: #FFFFFF;
-    line-height: 1.6;
+    line-height: 1.6; /*THIS IS WHAT ADDS THE EXTRA LENGTH OF MAROON ABOVE AND BELOW THE BUTTONS IN NAVBAR */
     
 }
 
@@ -154,9 +154,9 @@ body {
 
 
 
-/* === .room-page (Expanded + Improved Image Sizing) === */
+/* (Expanded + Improved Image Sizing)  */
 .room-page {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 40px;
     margin-top: 200px;

@@ -51,7 +51,7 @@
         <h2>Standard King Room</h2>
         <div class="room-details">
             <div class="room-image">
-                <img src="images/room-Standard-king-room-2.jpeg" alt="Pool-View Cottage Room">   
+                <img src="images/roomphotos/standardkingroom1of3.jpg" alt="Pool-View Cottage Room">   
             </div>
 
 
@@ -60,9 +60,9 @@
 
             <!-- Gallery Thumbnails -->
         <div class="gallery">
-            <img src="images/amok.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('room-Pool-view-cottage-1.jpeg', 1)">
-            <img src="images/spa.png" alt="Image 2" class="thumbnail" onclick="changeMainImage('room-Standard-king-room-2.jpeg', 2)">
-            <img src="images/cooks.jpeg" alt="Image 3" class="thumbnail" onclick="changeMainImage('room-Family-room-4.jpeg', 3)">
+            <img src="images/roomphotos/standardkingroom1of3.jpg" alt="Image 1" class="thumbnail" onclick="changeMainImage('images/roomphotos/standardkingroom1of3.jpg', 1)">
+            <img src="images/roomphotos/standardkingroom2of3.jpg" alt="Image 2" class="thumbnail" onclick="changeMainImage('images/roomphotos/standardkingroom2of3.jpg', 2)">
+            <img src="images/roomphotos/terracekingroom3of3.jpg" alt="Image 3" class="thumbnail" onclick="changeMainImage('images/roomphotos/terracekingroom3of3.jpg', 3)">
 
             <script>
                 // Function to change the main image
@@ -70,7 +70,7 @@
                     // Find the main image container
                     const mainImage = document.querySelector('.room-image img');
                     // Change the source of the main image to the clicked thumbnail's image
-                    mainImage.src = 'images/' + imageSrc; // Assuming the images are in the "images" folder
+                    mainImage.src = imageSrc; // THIS WAS CHANGED FROM "images/ + " imageSrc     because i changed the photos folder on the src above
                      // Update the counter
                     const counter = document.querySelector('.gallery-subtext');
                     counter.textContent = index + ' of 3';

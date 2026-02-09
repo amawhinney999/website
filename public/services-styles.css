@@ -7,8 +7,9 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #FF9933, #FFF8E7);
+  background: linear-gradient(to bottom, #FF9933, #ffeab8);
   color: #fff;
+  line-height: 1.6; /*THIS IS WHAT ADDS THE EXTRA LENGTH OF MAROON ABOVE AND BELOW THE BUTTONS IN NAVBAR */
 }
 
 /* Header */
@@ -59,42 +60,47 @@ body {
 
 /* Navbar */
 .nav-banner {
-    top: 120px;
+    
+    top: 120px; 
     background-color: #9B2915;
     width: 100%;
-    z-index: 5;
-    border-top: 1px solid rgba(255, 145, 0, 0.87);
-    border-bottom: 1px solid rgba(255, 145, 0, 0.87);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    z-index: 5; 
+    border-top: 1px solid rgba(255, 145, 0, 0.87); 
+    border-bottom: 1px solid rgba(255, 145, 0, 0.87); 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    margin-top: -30px;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: 0 auto; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    position: absolute; 
+    margin-top: -30px; 
 }
 
 .nav-banner ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .nav-banner ul li a {
-  color: #E9B44C;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition: background 0.3s;
-  padding: 10px 20px;
-  border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #E9B44C;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .nav-banner ul li a:hover,
@@ -105,11 +111,11 @@ body {
 
 /* Services Container */
 .services-container {
-  background: #9B2915;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 200px auto 80px;
+  padding: 40px;
+  background-color: #9B2915;
   border-radius: 12px;
-  padding: 60px 40px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
@@ -120,7 +126,7 @@ body {
 
 .services-header h2 {
   color: #E9B44C;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -141,31 +147,35 @@ body {
 .service-item.reverse {
   flex-direction: row-reverse;
 }
+/* THESE BELOW ARE THE NEW EDITS 09/02/26 TO MAKE THESE SERVICE IMAGES GET BIGGER. HAVING BIG PROBLEMS DOING THIS, SO NOW THEY JUST ZOOM */
 
-.service-item img {
+/* Make service images behave like room thumbnails: use a wrapper (.service-thumb) to clip and round image */
+.service-thumb {
   width: 45%;
-  border-radius: 10px;
+  border-radius: 8px;            /* same radius as rooms */
+  overflow: hidden;             /* crucial: clips the scaled image */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+  display: block;
+}
+
+.service-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
+  transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
-.service-text {
-  flex: 1;
+/* Make the image itself scale on hover exactly like rooms thumbnails */
+.service-thumb img:hover {
+  transform: scale(1.15);
 }
 
-.service-text h3 {
-  color: #E9B44C;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-}
+/* THESE ABOVE ARE THE NEW EDITS 09/02/26 TO MAKE THESE SERVICE IMAGES GET BIGGER. HAVING BIG PROBLEMS DOING THIS, SO NOW THEY JUST ZOOM */
 
-.service-text p {
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* --- ABOUT-style card effect --- */
+/*  ABOUT-style card effect */
 .service-text .about-card {
   background-color: rgba(255,255,255,0.06); /* semi-transparent grey */
   padding: 20px;
@@ -213,7 +223,7 @@ footer a:hover {
     flex-direction: column;
   }
 
-  .service-item img {
+  .service-thumb {
     width: 100%;
   }
 
